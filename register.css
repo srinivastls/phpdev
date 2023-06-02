@@ -1,0 +1,131 @@
+*{
+    font-family: 'Varela Round', sans-serif;
+}
+body{
+    background-color: aqua;
+   align-items: center;
+}
+.create{
+    
+    font-size:40px;
+    color: rgb(84, 61, 61);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 900;
+    background-color: rgb(36, 37, 36);
+    color:transparent;
+    -webkit-background-clip: text;
+}
+.card{
+    background-color:yellowgreen ;
+}
+.sign-in{
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    row-gap: 12px;
+    margin-left: 2%;
+    font-family: 'Varela Round', sans-serif;
+}
+.box{
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+    box-shadow: 0px 0px 3px inset;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+}
+.sign-in-btn{
+    height: 40px;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 0px;
+    box-shadow: 0px 0px 1px inset black;
+    font-size: 20px;
+    background-color: rgb(50, 122, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-top: 30px;
+}
+.sign-in-btn:hover{
+    background-color:  rgb(45, 90, 173);
+}
+.d-sign-in{
+    width: 400px;
+    height: 40px;
+    margin-left: 1px;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 0px;
+    box-shadow: 0px 0px 1px inset black;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.d-sign-in:hover{
+    background-color: rgb(212, 212, 212);
+    color: rgb(50, 122, 255);
+}
+
+
+
+.logo{
+    color:white;
+    font-size:35px;
+    line-height:80px;
+    padding:0 100px;
+    font-weight: bolder;
+    font-family: 'Quantico', sans-serif;
+}
+
+.checkbtn{
+    font-size:30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}    
+
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left : 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1130px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        z-index: 2;
+        width:fit-content;
+        height: 100%;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        transition: all 0.5s;
+    }
+
+    
+    #check:checked ~ ul{
+    left:0
+    }
+    .create{
+        margin-left:30%;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#" class="active">Menu bar</a>
+  <div class="r">
+    <a href="https://srinivastls.github.io/final/" target="_blank">About</a>
+    <a href="login.html"  target="_blank">Login</a>
+  <a href="registration.html"   target="_blank">Register</a>
+  <a href="https://github.com/srinivastls"   target="_blank">projects</a>
+  <a href="">  </a>
+  </div>
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<h1 >A small application using PHP framework and mysql data base</h1>
+<div class="te" >
+  
+  <li >It consists of  a login page and registration page and profile page which can be edited</li>
+  <br>
+  <li>In the about section this a brief info about me and my portfolio and projects and skills and my website</li>
+  <br>
+  <li>In projects section there is My github profile link </li>
+  <br>
+  <a href="http://phpclud890.infinityfreeapp.com/user/" target="_blank">
+  <li>My recent project link </li></a>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
